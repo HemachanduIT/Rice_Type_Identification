@@ -46,6 +46,30 @@ pip install tensorflow numpy pillow matplotlib pandas scikit-learn seaborn strea
 
 Tip: On CPU-only Windows, TensorFlow can be slow. Use Google Colab (GPU) if training is slow.
 <-------------------------------------------------------------------------------------->
-5) Train the model (Transfer Learning MobileNetV2)
+4) Train the model (Transfer Learning MobileNetV2)
              python train_mobilenetv2.py
 <-------------------------------------------------------------------------------------->
+5) Inspect training results
+            After training, open these files:
+
+            accuracy.png and loss.png — training/validation curves.
+
+            classification_report.txt — precision/recall/F1 per class.
+
+            confusion_matrix.png — confusion matrix heatmap (if seaborn installed).
+
+            misclassified.csv — rows: filename,true_label,pred_label,pred_confidence.
+
+Y           ou can open CSV in Excel or VSCode.
+<-------------------------------------------------------------------------------------->
+6) Run the Streamlit app (prediction UI)
+        streamlit run app.py
+<-------------------------------------------------------------------------------------->
+7) Commands checklist (copy-paste friendly)
+            # in PowerShell
+cd D:\GrainPalette
+& D:/GrainPalette/rice-env/Scripts/Activate.ps1
+pip install -r requirements.txt     # or pip install ...
+python train_mobilenetv2.py
+# after training:
+streamlit run app.py
