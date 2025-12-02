@@ -19,3 +19,33 @@ python -m venv rice-env
 # activate (PowerShell)
 & D:/GrainPalette/rice-env/Scripts/Activate.ps1
 # prompt should show (rice-env)
+<-------------------------------------------------------------------------------------->
+3)Install dependencies
+         Create requirements.txt containing (example):
+
+tensorflow
+numpy
+pillow
+matplotlib
+pandas
+scikit-learn
+seaborn
+streamlit
+
+
+Install:
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
+If you don’t use requirements.txt, install directly:
+
+pip install tensorflow numpy pillow matplotlib pandas scikit-learn seaborn streamlit
+
+
+Tip: On CPU-only Windows, TensorFlow can be slow. Use Google Colab (GPU) if training is slow.
+<-------------------------------------------------------------------------------------->
+5) Train the model (Transfer Learning MobileNetV2)
+             python train_mobilenetv2.py
+<-------------------------------------------------------------------------------------->
