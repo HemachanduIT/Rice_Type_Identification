@@ -1,0 +1,21 @@
+                                          Quick overview
+<-------------------------------------------------------------------------------------->
+1) Prepare project folder:
+    
+    D:\GrainPalette\
+ ├─ train_mobilenetv2.py        # training script (the one I gave)
+ ├─ build_model.py              # optional
+ ├─ app.py                      # Streamlit app
+ ├─ rice_dataset\               # dataset folder (see structure below)
+ └─ requirements.txt            # pip requirements (optional)
+
+<-------------------------------------------------------------------------------------->
+2) Create & activate Python environment
+      cd D:\GrainPalette
+
+# create venv (only once)
+python -m venv rice-env
+
+# activate (PowerShell)
+& D:/GrainPalette/rice-env/Scripts/Activate.ps1
+# prompt should show (rice-env)
