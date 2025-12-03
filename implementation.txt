@@ -73,3 +73,79 @@ pip install -r requirements.txt     # or pip install ...
 python train_mobilenetv2.py
 # after training:
 streamlit run app.py
+<-------------------------------------------------------------------------------------->
+8)Flowchart — Neat Box & Arrow Diagram
+ ┌──────────────────────┐
+ │        Start         │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │  Project Setup        │
+ │ - Install Python,     │
+ │   dependencies        │
+ │ - Create venv         │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │ Dataset Collection &  │
+ │     Organization      │
+ │ - Create rice_dataset │
+ │   with class folders  │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │ Data Preprocessing &  │
+ │     Augmentation      │
+ │ - Resize 224x224      │
+ │ - Normalize & Augment │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │ Model Design          │
+ │ Transfer Learning     │
+ │ using MobileNetV2     │
+ │ + Classification Head │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │   Model Training      │
+ │ - Compile & Fit       │
+ │ - Use Callbacks       │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │   Model Evaluation    │
+ │ - Accuracy & Loss     │
+ │ - Confusion Matrix    │
+ │ - Misclassified list  │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │    Model Saving       │
+ │ - Save .h5 & labels   │
+ │   json mapping        │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │ Streamlit App         │
+ │ - Upload image        │
+ │ - Predict variety     │
+ │ - Show confidence     │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │ Integration & Testing │
+ │ - Run Web UI          │
+ │ - Validate output     │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │ Deployment & Report   │
+ │ - Submit final docs   │
+ │ - Optional hosting    │
+ └───────────┬──────────┘
+             │
+ ┌───────────▼──────────┐
+ │         End           │
+ └──────────────────────┘
+
