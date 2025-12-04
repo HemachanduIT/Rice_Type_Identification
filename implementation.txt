@@ -24,6 +24,7 @@ python -m venv rice-env
          Create requirements.txt containing (example):
 
 tensorflow
+pytorch
 numpy
 pillow
 matplotlib
